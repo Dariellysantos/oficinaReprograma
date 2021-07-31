@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reprograma - Calculadora Freelancer</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  </head>
+  <body>
+     <main class="conteudo-principal">
+      <section class="secao secao-hora">
+        <article class="secao__conteudo">
+          <div class="secao__formulario">
+            <fieldset>
+              <legend>Qual valor gasto com o projeto por hora?</legend>
+              <div class="secao__formulario__grupo">
+                <label for="valor-hora">Valor por hora</label>
+                <input id="valor-hora" type="number" value="0" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Quantas horas serão gastas com o projeto?</legend>
+              <div class="secao__formulario__grupo">
+                <label for="horas-projeto">Horas por dia</label>
+                <input id="horas-projeto" type="number" value="0" />
+              </div>
+            </fieldset>
+            <button onclick="calcularValorHora()">Calcular projeto</button>
+          </div>
+        </article>
+        <footer class="secao__rodape">
+          <h3 class="secao__rodape__valor">
+            <span id="resposta">R$ 0,00</span><small>/total</small>
+          </h3>
+          <p class="secao__rodape__legenda">Valor gasto com o projeto</p>
+        </footer>
+      </section>
+    </main>
+    <script type="text/javascript" src="js/desafio.js"></script>
+  </body>
+</html>
